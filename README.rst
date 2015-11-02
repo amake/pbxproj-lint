@@ -11,9 +11,9 @@ It can optionally remove all extraneous files.
 
 Usage
 =====
+Invoke as::
 
-::
-   pbxproj_lint [--strict] [--clean] PBXPROJ_FILE
+    pbxproj_lint [--strict] [--clean] PBXPROJ_FILE
 
 Options:
 
@@ -24,8 +24,9 @@ Options:
 
 Quick Install
 =============
-::
-   pip install git+https://github.com/amake/pbxproj-lint.git
+This package is not on PyPI, so install with::
+
+    pip install git+https://github.com/amake/pbxproj-lint.git
   
 Known Limitations
 =================
