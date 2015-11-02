@@ -1,4 +1,4 @@
-pbxproj_lint
+pbxproj-lint
 ============
 
 A linter for Xcode .pbxproj files. Currently detects the following issues:
@@ -31,10 +31,10 @@ This package is not on PyPI, so install with::
 Known Limitations
 =================
 
-pbxproj_lint has not been tested and probably does not work with projects that
+pbxproj-lint has not been tested and probably does not work with projects that
 are not using Base Internationalization.
   
 License
 =======
 
-pbxproj_lint is distributed under the `MIT license <LICENSE.txt>`__.
+pbxproj-lint is distributed under the `MIT license <LICENSE.txt>`__.
