@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='pbxproj_lint',
-    version='1.0a1',
+    version='1.0a2',
     description='A linter for Xcode .pbxproj files',
     long_description=long_description,
     url='https://github.com/amake/pbxproj-lint',
