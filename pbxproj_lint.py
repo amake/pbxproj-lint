@@ -133,7 +133,7 @@ def _lint_files(pbxproj_path, project, do_clean):
     return errors, warnings
 
 def die():
-    print 'Usage: pbxproj-lint.py [--strict] [--clean] PBXPROJ_PATH'
+    print 'Usage: pbxproj_lint [--strict] [--clean] PBXPROJ_PATH'
     sys.exit(1)
     
 def main():
