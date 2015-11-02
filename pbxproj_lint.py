@@ -12,6 +12,16 @@ MEDIA_EXTENSIONS = ['.jpg',
                     '.mov',
                     '.mp4']
 
+IGNORE_PATHS = ['PodFile',
+                'Podfile.lock',
+                'Frameworks',
+                '.xcassets',
+                '.xcdatamodel',
+                '.xcworkspace',
+                'xcuserdata',
+                '.pbxproj',
+                '.git']
+
 def do_lint(pbxproj, is_strict, do_clean):
     logging.info('Analyzing: %s', pbxproj)
     project = XcodeProject.Load(pbxproj)
@@ -113,14 +123,7 @@ def _lint_files(pbxproj_path, project, do_clean):
         for f in files:
             full_path = os.path.join(root, f)
             if any(ignore in full_path for ignore in [xcodeproj_root,
-                                                      pods_root,
-                                                      'PodFile',
-                                                      'Podfile.lock',
-                                                      'Frameworks',
-                                                      '.xcassets',
-                                                      '.xcdatamodel',
-                                                      '.xcworkspace',
-                                                      'Scripts']):
+                                                      pods_root] + IGNORE_PATHS):
                 continue
             if full_path not in proj_files:
                 untracked.append(full_path)
