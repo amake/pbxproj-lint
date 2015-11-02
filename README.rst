@@ -22,6 +22,11 @@ Options:
 - ``--clean``: Remove extraneous files from disk (you will not be asked for
   confirmation, so be careful!)
 
+Quick Install
+=============
+::
+   pip install git+https://github.com/amake/pbxproj-lint.git
+  
 Known Limitations
 =================
 
