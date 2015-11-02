@@ -36,4 +36,4 @@ are not using Base Internationalization.
 License
 =======
 
-pbxproj_lint is distributed under the MIT license. See LICENSE.txt.
+pbxproj_lint is distributed under the `MIT license <LICENSE.txt>`__.
